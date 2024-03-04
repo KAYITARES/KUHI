@@ -3,7 +3,7 @@
 
     height: 100%;
     border-radius: 50%;
- width:40%;
+ width:30%;
     position: relative;
     transition: transform 0.3s ease; 
     cursor: pointer;
@@ -86,13 +86,23 @@ color: white;
 
 .btn-home{
     background-color:#f3698c;
-    padding: 1rem 4rem;
+ 
     text-decoration: none;
-    color: #fff;
-    font-size: medium;
+    
+ 
     border-radius: 2rem;
     transition: all .3s;
     list-style: none;
+    font-family: "Roboto Mono", Sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+   
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px 30px 10px 30px;
 }
     }
 }
