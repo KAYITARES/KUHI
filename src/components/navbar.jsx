@@ -23,13 +23,17 @@ function NavBar(){
                 <li><Link className="link">The Summit<ArrowDropDownIcon className="ic"/>
                 <div className="drop-down">
                 <li><Link className="linka">ABOUT US</Link></li>
-                <li><Link className="linka">OUR SPONSORS</Link></li>
-                <li><Link className="linka">OUR SPEAKERS</Link></li>
+                <li>
+                <li><Link className="linka" to="./sponsor">OUR SPONSOR</Link></li>
+</li>
+
+
+                <li><Link className="linka" to="./speaker">OUR SPEAKERS</Link></li>
                 <li><Link className="linka">SUMMIT AGENDA</Link></li>
                 </div>
                 </Link></li>
                 <li><Link className="link">AGENDA</Link></li>
-                <li><Link className="link">Sponsors</Link></li>
+                <li><Link className="link"  to="./sponsor">Sponsors</Link></li>
                 <li><Link className="link">Practical-Information<ArrowDropDownIcon className="ic"/>
                 <div className="drop-down">
                 <li><Link className="linka">VISA INFORMATION</Link></li>
