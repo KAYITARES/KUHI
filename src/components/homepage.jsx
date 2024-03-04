@@ -1,5 +1,5 @@
 import React from "react";
-import home from "../assets/KUHI.png";
+import home from "../assets/KUHI_Consortium_Logo-removebg-preview.png";
 import kuhi from "../assets/alight.jpg";
 import gsma from "../assets/GSMA.jpg";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
@@ -27,12 +27,12 @@ function HomePage() {
     console.log(currentSlide);
   };
   const backgroundImage = {
-    backgroundImage: `linear-gradient(to bottom, rgba(253, 253, 253, 0.52), rgba(1, 1, 1, 0.73)), url("https://images.pexels.com/photos/1192662/pexels-photo-1192662.jpeg?auto=compress&cs=tinysrgb&w=600")`,
+    backgroundImage: `linear-gradient(to bottom, rgba(253, 253, 253, 0.52), rgba(1, 1, 1, 0.73)), url("https://images.pexels.com/photos/1192662/pexels-photo-1192662.jpeg?")`,
     // backgroundColor:'red',
-    backgroundPosition: "50% 20%",
+    backgroundPosition: "50% 35%",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    // height: "63vh",
+    height: "59vh",
     backgroundColor: "black",
   };
   return (
