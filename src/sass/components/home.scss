@@ -70,16 +70,20 @@ hr{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width:100%;
+ 
 color: white;
     .falls{
         width: 100%;
         font-size: 2rem;
+     padding:1.5rem 0;
         line-height: 3rem;
+  
     }
     .add{
-        width: 50%;
+      
         font-size: 4rem;
-
+        
     }
 
 }
@@ -96,7 +100,7 @@ color: white;
     font-family: "Roboto Mono", Sans-serif;
     font-size: 14px;
     font-weight: 700;
-    margin-top: 3rem;
+    margin-top: 2rem;
     text-transform: uppercase;
     fill: #FFFFFF;
     color: #FFFFFF;
