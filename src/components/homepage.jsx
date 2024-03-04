@@ -41,7 +41,7 @@ function HomePage() {
         <div className="home-page" style={backgroundImage}>
           <div className="home">
             <div className="translate">
-              <img src={home} alt="rotate" />
+              {/* <img src={home} alt="rotate" /> */}
             </div>
             <div className="dates">
               <div className="date">
