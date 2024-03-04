@@ -44,7 +44,7 @@ function HomePage() {
               {/* <img src={home} alt="rotate" /> */}
             </div>
             <div className="dates">
-            <h1 style={{margin:"0 0 30px 0"}}>CONSORTIUM LAUCHING</h1>
+            <h1 style={{margin:"0 0 10px 0"}}>CONSORTIUM LAUCHING</h1>
               <div className="date">
           
                 <div className="vis">
