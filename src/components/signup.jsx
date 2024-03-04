@@ -66,18 +66,20 @@ export default function SignUp() {
                   name="firstName"
                   required
                   fullWidth
-                  id="firstName"
-                  label="started Date"
+                  id="start"
+                  label="started"
                   autoFocus
+                  className='rem'
                 />
               </Grid>
               <Grid item xs={12} sm={6}>
                 <TextField
                   required
                   fullWidth
-                  id="lastName"
-                  label="End of Date"
+                  id="end"
+                  label="End"
                   name="lastName"
+                  className='rem'
                   autoComplete="family-name"
                 />
               </Grid>
@@ -85,14 +87,15 @@ export default function SignUp() {
                 <TextField
                   required
                   fullWidth
-                  id="email"
+                  id="place"
                   label="place"
-                  name="email"
-                  autoComplete="email"
+                  name="place"
+                  className='rem'
+                  autoComplete="place"
                 />
               </Grid>
               <Grid item xs={12}>
-                <TextField
+                {/* <TextField
                   required
                   fullWidth
                   name="password"
@@ -100,7 +103,7 @@ export default function SignUp() {
                   type="password"
                   id="password"
                   autoComplete="new-password"
-                />
+                /> */}
               </Grid>
               <Grid item xs={12}>
                 <FormControlLabel
@@ -114,8 +117,9 @@ export default function SignUp() {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
+              className='btn'
             >
-              Sign Up
+              REGISTER NOW
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
