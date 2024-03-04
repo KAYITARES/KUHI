@@ -32,7 +32,7 @@ function NavBar(){
                 <li><Link className="linka">SUMMIT AGENDA</Link></li>
                 </div>
                 </Link></li>
-                <li><Link className="link">AGENDA</Link></li>
+                <li><Link to="/agenda" className="link">AGENDA</Link></li>
                 <li><Link className="link"  to="./sponsor">Sponsors</Link></li>
                 <li><Link className="link">Practical-Information<ArrowDropDownIcon className="ic"/>
                 <div className="drop-down">

@@ -54,11 +54,13 @@
             }
             @media(max-width:1021px){
                 li{
-                    padding: 1rem 2rem;  
+                    padding: 1.5rem 2.5rem;  
                 }
             }
             @media(max-width:847px){
-                padding: 0.5rem 1rem;
+                li{
+                    padding: 0.5rem 1rem;
+                }
             }
             #active{
                 background-color: #04aaed;
@@ -67,6 +69,12 @@
         @media(max-width:1021px){
             .agenda-nav{
                 gap: 0;
+            }
+        }
+        @media(max-width:595px){
+            .agenda-nav{
+                display: grid;
+                grid-template-columns: repeat(3,2fr);
             }
         }
 
