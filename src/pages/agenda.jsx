@@ -1,5 +1,7 @@
 import Data from "../assets/agenda.json"
 import React,{ useState } from "react"
+import NavBar from "../components/navbar"
+import Footer from "../components/footer"
 
 
 
@@ -30,6 +32,7 @@ export default function Agend(){
 
     return (
         <>
+        <NavBar/>
            <div className="agenda-page">
                   <h4>Our Agenda</h4>
                <div className="agend-container">
@@ -86,6 +89,7 @@ export default function Agend(){
                    
                </div>
            </div>
+           <Footer/>
         </>
     )
 }
