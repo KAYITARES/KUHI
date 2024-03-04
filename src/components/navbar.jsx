@@ -1,6 +1,6 @@
 import React from "react";
 import {Link } from 'react-router-dom';
-import logos from '../assets/KUHI.png';
+import logos from '../assets/KUHI_Consortium_Logo-removebg-preview.png';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from "react";
