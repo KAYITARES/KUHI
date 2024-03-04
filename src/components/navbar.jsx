@@ -5,6 +5,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from "react";
 import Button from "@mui/material/Button";
+import SignUpPage from "../pages/signuppage";
 
 
 function NavBar(){
@@ -43,7 +44,7 @@ function NavBar(){
                 </Link></li>
                 
             </ul>
-            <Button variant="contained" disableElevation className="btn-nav">
+            <Button variant="contained" disableElevation className="btn-nav" to={<SignUpPage/>}>
                 REGISTER NOW
               </Button>
             <div className="menu">

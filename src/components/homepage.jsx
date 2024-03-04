@@ -44,9 +44,12 @@ function HomePage() {
               {/* <img src={home} alt="rotate" /> */}
             </div>
             <div className="dates">
+            <h1 style={{margin:"0 0 30px 0"}}>CONSORTIUM LAUCHING</h1>
               <div className="date">
+          
                 <div className="vis">
-                  <h1 className="falls">28-30 APRIL</h1>
+                
+                  <h1 className="falls">March 14<sup>th</sup>2024</h1>
                   <CalendarMonthOutlinedIcon className="add" />
                 </div>
               </div>
@@ -55,7 +58,7 @@ function HomePage() {
               <div className="victory">
                 <div className="vis">
                   <h1 className="falls">
-                    VICTORY FALLS IN RWANDA GORILLA HILLS
+                  Kigali Convention Center-Kigali
                   </h1>
                   <AddLocationAltIcon className="add" />
                 </div>
