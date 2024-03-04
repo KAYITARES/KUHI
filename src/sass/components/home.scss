@@ -39,6 +39,12 @@ h1{
         border-radius: 50%;
     }
 }
+@media screen and (max-width:1180px) {
+    .translate{
+        width: 300px;
+        height: 300px;
+    }
+}
 @media screen and (max-width:914px) {
     .translate{
         flex-direction: column;
