@@ -5,6 +5,7 @@ import HomePage from "../components/homepage";
 import Speakers from "../components/speakers";
 import Sponsors from "../components/sponsor";
 import Footer from "../components/footer";
+import Agend from "../components/agenda";
 
 
 function Welcome(){
@@ -13,6 +14,7 @@ function Welcome(){
             <NavBar/>
             <HomePage/>
             <Speakers/>
+            <Agend/>
             <Sponsors/>
             <Footer/>
         </>

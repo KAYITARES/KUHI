@@ -1,0 +1,158 @@
+.agenda-page{
+    background-color: #fdfbfb;
+    padding: 4rem 3rem;
+
+    h4{
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Courier New', Courier, monospace;
+        padding-bottom: 3rem;
+       
+    }
+
+
+    .agend-container{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        .agenda-nav{
+            display: flex;
+            justify-content: left;
+            gap: 0.5rem;
+            border-bottom: 2px solid #04aaed;
+            background-color: #f27c71;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+            li{
+                list-style: none;
+                padding: 1rem 3.5rem;
+                border-top-left-radius: 10px;
+               border-top-right-radius: 10px;
+
+                h1{
+                    font-weight: 800;
+                    font-family: 'Courier New', Courier, monospace;
+                    color: #fff;
+                }
+                p{
+                    font-family: 'Courier New', Courier, monospace;
+                    font-size: 1.6rem;
+                    padding-top: 6px;
+                    color: #fff;
+                    font-weight: 600;
+
+                    span{
+                        font-weight: 100;
+                    }
+                }
+                @media(max-width:847px){
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            @media(max-width:1021px){
+                li{
+                    padding: 1rem 2rem;  
+                }
+            }
+            @media(max-width:847px){
+                padding: 0.5rem 1rem;
+            }
+            #active{
+                background-color: #04aaed;
+            }
+        }
+        @media(max-width:1021px){
+            .agenda-nav{
+                gap: 0;
+            }
+        }
+
+        .agenda-cards{
+            display: flex;
+            flex-direction: column;
+
+
+            .cards{
+                background-image: linear-gradient(to bottom,#e7e5e5,#aabbc2cb);
+                border-bottom: 2px solid #04aaed;
+                padding-left: 2rem;
+
+
+                .explanation{
+                    padding: 1.5rem;
+                    margin-left: 3rem;
+                    display: none;
+                }
+
+                .card{
+                   
+                   display: flex;
+                   justify-content: space-between;
+                  
+    
+    
+                   .firstdiv{
+                        display: flex;
+                        justify-content: center;
+                        gap: 2rem;
+                        padding: 1.5rem;
+    
+                        h2{
+                          font-size: 1.7rem;
+                        }
+                        p{
+                            display: flex;
+                            flex-direction: column;
+    
+                            span{
+                                font-size: 2rem;
+                                 font-family: 'Courier New', Courier, monospace;
+                                font-weight: 700;
+                            }
+                            @media(max-width:847px){
+                                span{
+                                    font-size: 1rem;
+                                }
+                            }
+    
+                            button{
+                                width: 70%;
+                                border-radius: 1rem;
+                                border: none;
+                                box-shadow: none;
+                                outline: none;
+                                padding: 0.3rem;
+                                margin-top: 1.5rem;
+                                background-color: #f27c71;
+                                color: #fff;
+                                font-weight: 500;
+                            }
+                            @media(max-width:847px){
+                                width: 50%;
+                            }
+                        }
+                   }
+    
+                   .secondiv{
+                     padding: 1.5rem;
+    
+                     button{
+                        margin-top: 3.7rem;
+                        border-radius: 1rem;
+                        padding: 0.3rem 1rem;
+                        background-color: #04aaed;
+                        border: none;
+                        box-shadow: none;
+                        outline: none;
+                     }
+                   }
+    
+    
+                }
+            }
+        }
+    }
+}
