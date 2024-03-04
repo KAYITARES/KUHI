@@ -40,11 +40,9 @@ function HomePage() {
       <div className="home-container">
         <div className="home-page" style={backgroundImage}>
           <div className="home">
-            <div className="translate">
-              {/* <img src={home} alt="rotate" /> */}
-            </div>
+           
             <div className="dates">
-            <h1 style={{margin:"0 0 10px 0"}}>CONSORTIUM LAUCHING</h1>
+            <h1 style={{margin:"0 0 10px 0"}}>Digital Financial Inclusion Community of Practice Launch</h1>
               <div className="date">
           
                 <div className="vis">
