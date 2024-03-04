@@ -3,7 +3,7 @@
 
     height: 100%;
     border-radius: 50%;
- width:40%;
+ width:30%;
     position: relative;
     transition: transform 0.3s ease; 
     cursor: pointer;
@@ -70,39 +70,68 @@ hr{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width:100%;
+ 
 color: white;
     .falls{
         width: 100%;
         font-size: 2rem;
+     padding:1.5rem 0;
         line-height: 3rem;
+  
     }
     .add{
-        width: 50%;
+      
         font-size: 4rem;
-
+        
     }
 
 }
 
 .btn-home{
     background-color:#f3698c;
-    padding: 1rem 4rem;
+ 
     text-decoration: none;
-    color: #fff;
-    font-size: medium;
+    
+ 
     border-radius: 2rem;
     transition: all .3s;
     list-style: none;
+    font-family: "Roboto Mono", Sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+   
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px 30px 10px 30px;
 }
     }
 }
 @media screen and (max-width:914px) {
     .home{
         flex-direction: column;
-        height: auto;
+        height: 100%;
         padding: auto;
         .dates{
             gap: .2rem;
+        }
+    }
+}
+@media screen and (max-width:370px) {
+    .home{
+        flex-direction: column;
+        height: auto;
+        padding: auto;
+        align-items: center;
+       
+        .dates{
+            gap: .2rem;
+       padding: 0 1rem;
+            margin: 10rem 0;
+         
         }
     }
 }

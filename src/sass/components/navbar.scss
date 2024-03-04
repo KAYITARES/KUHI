@@ -35,6 +35,7 @@ nav{
         background-color:#04aaed;
     }
 }
+
     .logo{
         color: white;
     }
@@ -157,6 +158,8 @@ nav{
         background-color:#04aaed;
     }
 }
+
+
        
     }
     @media (max-width: 851px) {
@@ -166,7 +169,7 @@ nav{
         }
         .btn-nav{
             background-color: #f27c71;
-            padding: 1rem 4rem;
+            // padding: 1rem 4rem;
             text-decoration: none;
             color: #fff;
             font-size: medium;
@@ -176,6 +179,14 @@ nav{
             &:hover{
                 background-color:rgb(14, 190, 248);
             }
+        }
+
+        @media (max-width:444px) {
+            .btn-nav{
+                padding: .6rem;
+                border-radius: .2rem;
+            }
+           
         }
        
          
@@ -204,6 +215,20 @@ nav{
 
         }
     }
+    @media (max-width:444px) {
+        .logo{
+            width: 100px;
+        }
+       
+    }
+
+    @media (max-width:350px) {
+        .logo{
+            width: 50px;
+        }
+       
+    }
+    
     @media (max-width: 1101px) {
         .logo{
             span{
