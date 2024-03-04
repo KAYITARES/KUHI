@@ -113,10 +113,25 @@ color: white;
 @media screen and (max-width:914px) {
     .home{
         flex-direction: column;
-        height: auto;
+        height: 100%;
         padding: auto;
         .dates{
             gap: .2rem;
+        }
+    }
+}
+@media screen and (max-width:370px) {
+    .home{
+        flex-direction: column;
+        height: auto;
+        padding: auto;
+        align-items: center;
+       
+        .dates{
+            gap: .2rem;
+       padding: 0 1rem;
+            margin: 10rem 0;
+         
         }
     }
 }
