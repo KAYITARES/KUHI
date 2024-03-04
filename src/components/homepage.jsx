@@ -42,12 +42,20 @@ function HomePage() {
           <div className="home">
            
             <div className="dates">
-            <h1 style={{margin:"0 0 10px 0"}}>Digital Financial Inclusion Community of Practice Launch</h1>
+            <h1 className="head">Digital Financial Inclusion Community of Practice Launch</h1>
               <div className="date">
           
                 <div className="vis">
+                <div className="april">
+                <div className="month">
+             <div className="dat">14-24</div>
+                </div>
+                <div className="day">
+            <div className="mon">APRIL</div>
+                </div>
+                </div>
                 
-                  <h1 className="falls">March 14<sup>th</sup>2024</h1>
+                  
                   <CalendarMonthOutlinedIcon className="add" />
                 </div>
               </div>
