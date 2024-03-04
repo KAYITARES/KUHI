@@ -40,7 +40,7 @@ function NavBar(){
                 
             </ul>
             <Button variant="contained" disableElevation className="btn-nav">
-                REGISTRATION
+                REGISTER NOW
               </Button>
             <div className="menu">
                 <MenuIcon className="menu-icon" onClick = {()=>setIsMobile(!isMobile)} />

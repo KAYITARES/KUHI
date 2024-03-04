@@ -9,18 +9,27 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
+    padding: .5rem 1.5rem;
   width: 100%;
 
   .btn-nav{
     background-color:#f3698c;
-    padding: 1rem 4rem;
+ 
     text-decoration: none;
-    color: #fff;
-    font-size: medium;
+    
+ 
     border-radius: 2rem;
     transition: all .3s;
     list-style: none;
+    font-family: "Roboto Mono", Sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+   
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px 30px 10px 30px;
 
     &:hover{
         background-color:#04aaed;
@@ -39,8 +48,8 @@ nav{
         
 
         .link {
-            font-size: 1.9rem;
-            border-right: 1px solid black;
+            font-size: 1.4rem;
+            border-right: 1px solid #32549c33!important;
             padding-right: 1rem;
             text-decoration: none;
             color: #f3698c;
@@ -49,8 +58,11 @@ nav{
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: "Montserrat", Sans-serif;
-
+            font-family: "Roboto Mono", Sans-serif;
+         
+            font-weight: 600;
+            text-transform: uppercase;
+           
           
         
             &::before {
@@ -169,10 +181,10 @@ nav{
          
         }
     .logo{
-        width: 70px;
-        height: 70px;
+        width: 180px;
+    object-fit: cover;
         display: flex;
-        color: black;
+      
         justify-content: center;
         align-items: center;
         gap: 1rem;
