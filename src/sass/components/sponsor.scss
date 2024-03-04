@@ -1,0 +1,115 @@
+.sponsor-container{
+    // background-color: #f333;
+    padding: 2rem;
+    .container-delay{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem;
+        .sponsors{
+            border-style: solid;
+        border-width: 1px 0px 0px 0px;
+        border-color: #0000001F;
+        transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding: 20px 0px 0px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+        align-items: center;
+        flex-basis: calc(70% - 10px); 
+        margin: 5px; 
+            .sponsor{
+                background-color: #f3698c;
+                width: 200px;
+                border-radius: 10px 10px;
+              
+                h3{
+                    padding: 1rem;
+                    text-align: center;
+                    color: white;
+                   
+                }
+                .image{
+                    object-fit: cover;
+                    width: 200px;
+                    height: 200px;
+                }
+              
+                img{
+                    width: 100%;
+                    height: 100%;
+                   
+                }
+            }
+        }
+    }
+
+    .btn-sponsor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 2rem;
+        .btn-spo{
+            background-color: #f3698c;
+            color: #fff;
+        }
+    }
+    
+}
+.head-container{
+    background-image:linear-gradient(to right,#8d6403,#684900,#eed60200), url('https://www.kenyanews.go.ke/wp-content/uploads/2024/02/1709110434508.-NAIROBI-SUMMIT-PHOTO-1-960x630.jpg');
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+filter: drop-shadow(32px);
+    .head-delay{
+        // background-color: red;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .head{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-basis: calc(55% - 10px); 
+            margin: 5px; 
+            height: 30vh;
+
+            .head-image{
+                width: 200px;
+                height: 200px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    z-index: 0;
+                }
+            }
+            .head-text{
+                font-size: 2rem;
+                font-family: "Montserrat", Sans-serif;
+                // width: 50%;
+
+                h1{
+                    color: #FFFFFF;
+                    font-family: "Prompt", Sans-serif;
+                    font-size: 40px;
+                    font-weight: 400;
+                    line-height: 60px;
+                    padding: 0 0 2rem;
+                
+                }
+                p{
+                    color: #FFFFFF;
+                    font-family: "Prompt", Sans-serif;
+                 
+                    font-weight: 400;
+                    line-height: 30px;
+                  
+                }
+            }
+        }
+    }
+}
