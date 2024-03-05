@@ -1,7 +1,7 @@
 import React from "react";
 import {Link } from 'react-router-dom';
 import logos from '../assets/KUHI_Consortium_Logo-removebg-preview.png';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+// import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from "react";
 import Button from "@mui/material/Button";
@@ -21,6 +21,7 @@ function NavBar(){
             </div>
             <ul className={isMobile?'openNav':'links'}
                     onClick={()=>setIsMobile(false)}>
+<<<<<<< HEAD
                 <li><Link className="link">The Summit<ArrowDropDownIcon className="ic"/>
                 <div className="drop-down">
                 <li><Link className="linka">ABOUT US</Link></li>
@@ -34,15 +35,13 @@ function NavBar(){
                 </div>
                 </Link></li>
                 <li><Link to="/agenda" className="link">AGENDA</Link></li>
+=======
+                <li><Link className="link">The Summit</Link></li>
+                <li><Link className="link" to="./speaker">OUR SPEAKERS</Link></li>
+                <li><Link className="link">AGENDA</Link></li>
+>>>>>>> f5a3d7b (changes)
                 <li><Link className="link"  to="./sponsor">Sponsors</Link></li>
-                <li><Link className="link">Practical-Information<ArrowDropDownIcon className="ic"/>
-                <div className="drop-down">
-                <li><Link className="linka">VISA INFORMATION</Link></li>
-                <li><Link className="linka">TAS 2023 OFFICIAL PITCTURE</Link></li>
-                <li><Link className="linka">HOTEL</Link></li>
-                </div>
-                </Link></li>
-                
+                <li><Link className="link">MEMBERS-MEDIA</Link></li>
             </ul>
             <Button
       variant="contained"
