@@ -1,0 +1,98 @@
+.home-agenda{
+    height: 300px;
+    padding: 3rem;
+    background-image: url("https://images.pexels.com/photos/1192662/pexels-photo-1192662.jpeg?");
+    object-fit: cover;
+    background-position: center;
+
+    .homeae{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5rem;
+        padding: 3rem 4.5rem;
+        width: 60%;
+
+
+        h1{
+            font-size: 3rem;
+            font-family: 'Courier New', Courier, monospace;
+            color: #fff;
+        }
+        p{
+            font-size: 1.6rem;
+            font-family: 'Courier New', Courier, monospace;
+            padding-top: 2rem;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+    @media(max-width:787px){
+        .homeae{
+            width: 100%;
+            margin-left: 1rem;
+        }
+    }
+    @media(max-width:391px){
+        .homeae{
+          padding: 2.5rem 2rem;
+        }
+    }
+
+}
+
+.agenda-controller{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .agenda-path{
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        padding: 2rem;
+        margin-top: 3.5rem;
+
+
+        .left{
+            display: flex;
+
+            li{
+                list-style: none;
+                padding: 1rem 1.5rem;
+                font-size: 1.5rem;
+
+                &:hover{
+                    background-color: #f27c71;
+                }
+            }
+            .agenda-link{
+                background-color: #f27c71;
+            }
+            @media(max-width:989px){
+                li{
+                    font-size: 1.2rem;
+                    padding: 0.5rem 0.9rem;
+                }
+            }
+            @media(max-width:787px){
+                li{
+                    display: none;
+                }
+            }
+        }
+        .rigth{
+            display: flex;
+            li{
+                list-style: none;
+                padding: 1rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .agenda-page{
+          width: 97%;
+    }
+}
