@@ -1,6 +1,7 @@
 import React from "react";
 // import CountUp from "react-countup/build/CountUp";
 import CountUp from "react-countup";
+import check from "../assets/img.png"
 
 const About=()=>{
     return(
@@ -94,7 +95,89 @@ const About=()=>{
             </div>
             <div className="about-three">
                 <div className="tree-cont">
-                    
+                    <h2>Who will Attend?</h2>
+                    <div className="tree-cont-divi">
+                        <div className="tree-cont-divi-one">
+                            <div className="tree-cont-divi-one-line">
+                            <p>Heads of State and Government</p>
+                                <i class='bx bx-check'></i>
+                            </div>
+                            <div className="tree-cont-divi-one-line">
+                            <p>First Ladies</p>
+                                <i class='bx bx-check'></i>
+                            </div>
+                            <div className="tree-cont-divi-one-line">
+                            <p>Ministers in ICT, Finance, Trade & Industry and Health</p>
+                                <i class='bx bx-check'></i>
+                            </div>
+                            <div className="tree-cont-divi-one-line">
+                            <p>Fintech companies</p>
+                                <i class='bx bx-check'></i>
+                            </div>
+                            <div className="tree-cont-divi-one-line">
+                            <p>Block chain experts</p>
+                                <i class='bx bx-check'></i>
+                            </div>
+                            <div className="tree-cont-divi-one-line">
+                            <p>Digital health service providers</p>
+                                <i class='bx bx-check'></i>
+                            </div>
+                            <div className="tree-cont-divi-one-line">
+                            <p>Artificial Intelligence firms & experts</p>
+                                <i class='bx bx-check'></i>
+                            </div>
+                            <div className="tree-cont-divi-one-line">
+                            <p>ICT Private Sector service providers</p>
+                                <i class='bx bx-check'></i>
+                            </div>
+                            <div className="tree-cont-divi-one-line">
+                            <p>Telecom& Utilities Regulators</p>
+                                <i class='bx bx-check'></i>
+                            </div>
+
+                        </div>
+                        <div className="tree-cont-divi-two">
+                            <img src={check} alt="" /> 
+                        </div>
+                        <div className="tree-cont-divi-three">
+                            <div className="tree-cont-divi-right">
+                            <i class='bx bx-check'></i>
+                                <p>International & Multilateral organizations</p>
+                            </div>
+                            <div className="tree-cont-divi-right">
+                            <i class='bx bx-check'></i>
+                                <p>Africa’s business influencers</p>
+                            </div>
+                            <div className="tree-cont-divi-right">
+                            <i class='bx bx-check'></i>
+                                <p>Investment banks & Venture capitalists</p>
+                            </div>
+                            <div className="tree-cont-divi-right">
+                            <i class='bx bx-check'></i>
+                                <p>Private equity fund managers</p>
+                            </div>
+                            <div className="tree-cont-divi-right">
+                            <i class='bx bx-check'></i>
+                                <p>Start ups</p>
+                            </div>
+                            <div className="tree-cont-divi-right">
+                            <i class='bx bx-check'></i>
+                                <p>Women & Girls in ICT champions</p>
+                            </div>
+                            <div className="tree-cont-divi-right">
+                            <i class='bx bx-check'></i>
+                                <p>Tech innovators</p>
+                            </div>
+                            <div className="tree-cont-divi-right">
+                            <i class='bx bx-check'></i>
+                                <p>Academia, Consultants &leading digitals leaders</p>
+                            </div>
+                            <div className="tree-cont-divi-right">
+                            <i class='bx bx-check'></i>
+                                <p>Non-governmental organizations</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="about-four"></div>
