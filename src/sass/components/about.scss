@@ -1,0 +1,167 @@
+.about-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .about-one{
+        width: 100%;
+        height: 60vh;
+        background-image: linear-gradient( to left bottom,rgba(128, 128, 128, 0),rgb(21, 117, 29),),
+        url("https://images.pexels.com/photos/707915/pexels-photo-707915.jpeg?");                                                                                           
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        padding: 0 10rem;
+        .about-text{
+            width: 100%;
+            height: 100%;  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                color: white;
+                font-size: 3rem;
+                position: relative;
+                padding: 2rem 0;
+                &::before{
+                    content: " ";
+                    bottom: 0%;
+                    left: 0%;
+                    height: 4px;
+                    width: 13%;
+                    background-image: linear-gradient(to right, rgb(247, 0, 255),rgb(128, 128, 128),rgb(128, 128, 128));
+                    position: absolute; 
+                }
+            }
+            p{
+                padding: 2rem 0;
+                color: white;
+                font-size: 1.8rem;
+            }            
+        }
+    }
+    .about-two{
+        width: 100%;
+        height: auto;
+        padding: 4rem 10rem;
+        .about-two-cont{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content:center;
+            gap: 2rem;
+            left: 0;
+            .two-cont-left{
+                width: 500px;
+                height: auto;
+                h2{
+                    color: black;
+                    font-size: 1.5rem;
+                    padding-bottom: 1rem;
+                    position: relative;
+                    &::after{
+                        content: " ";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        background:rgb(14, 119, 151);  ;
+                    }
+                }
+                .two-cont-left-stat{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    .stat-count-one{
+                        width: 100%;
+                        height: 150px;
+                        display: flex;
+                        justify-content: center;  
+                        padding: 1rem 0; 
+                        border-bottom: 1px solid rgb(14, 119, 151);                                                                                                                                                                                                                                                                                                                                                                                               
+                        .count-one{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                            width: 170PX;
+                            border-right: 1px solid rgb(14, 119, 151);
+                            
+                            p{
+                                font-size: 2rem;
+                                color: rgb(14, 119, 151);
+                            }
+
+                        }
+                        .count-two{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                            width: 170PX;
+                            border-right: 1px solid rgb(14, 119, 151);
+                            
+                            p{
+                                font-size: 2rem;
+                                color: rgb(14, 119, 151);
+                            }
+
+                        }
+                        .count-three{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            // background: gray;
+                            height: 100%;
+                            width: 170PX;
+                            
+                            p{
+                                font-size: 2rem;
+                                color: rgb(14, 119, 151);
+                            }
+
+                        }
+                    }
+                }
+            }
+            .two-cont-center{
+                width: 310px;
+                height: auto;   
+                padding: 2rem 0;
+                p{
+                    font-size: 1.7rem;
+                    letter-spacing: 2px;
+                }
+            }
+            .two-cont-right{
+                width: 300px;
+                height: auto;
+                padding: 2rem 0;
+                p{
+                    font-size: 1.7rem;
+                    letter-spacing: 2px;
+                }
+            }
+
+        }
+    }
+    .about-three{
+        background-color: rgb(19, 105, 105);
+        width: 100%;
+        height: 200px;
+        padding: 0 10rem;
+        .tree-cont{
+            background: white;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
