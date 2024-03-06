@@ -25,7 +25,7 @@ function NavBar(){
                 <li><Link className="link" to="./speaker">OUR SPEAKERS</Link></li>
                 <li><Link to="/agenda" className="link">AGENDA</Link></li>
                 <li><Link className="link"  to="./sponsor">Sponsors</Link></li>
-                <li><Link className="link">MEMBERS-MEDIA</Link></li>
+                <li><Link className="link" to="./members">MEMBERS-MEDIA</Link></li>
             </ul>
             <Button
       variant="contained"
