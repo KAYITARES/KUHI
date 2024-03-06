@@ -23,7 +23,7 @@ function NavBar(){
                     onClick={()=>setIsMobile(false)}>
                 <li><Link className="link">The Summit<ArrowDropDownIcon className="ic"/>
                 <div className="drop-down">
-                <li><Link className="linka">ABOUT US</Link></li>
+                <li><Link className="linka" to="./About">ABOUT US</Link></li>
                 <li>
                 <li><Link className="linka" to="./sponsor">OUR SPONSOR</Link></li>
 </li>
