@@ -33,15 +33,6 @@
                 font-weight: 600;
                 position: relative;
                 padding: 2rem 0;
-                &::before{
-                    content: " ";
-                    bottom: 0%;
-                    left: 0%;
-                    height: 4px;
-                    width: 13%;
-                    background-image: conic-gradient(white, #f3698c );
-                    position: absolute; 
-                }
             }
             p{
                 padding: 2rem 0;
@@ -88,15 +79,6 @@
                     padding-bottom: 1rem;
                     font-weight: 600;
                     position: relative;
-                    &::after{
-                        content: " ";
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 1px;
-                        background:rgb(14, 119, 151);
-                    }
                 }
                 .two-cont-left-stat{
                     width: 100%;
@@ -359,18 +341,6 @@
                 font-size: 3rem;
                 color: white;
                 position: relative;
-                &::before{
-                    content: " ";
-                    position: absolute;
-                    width: 100px;
-                    height: 4px;
-                    background-image: conic-gradient(white, #f3698c );
-                    bottom: 3rem;
-                    left: 10rem;
-                    @media (max-width:396px) {
-                        display: none;
-                    }
-                }
             }
             .tree-cont-divi{
                 width: 100%;
@@ -431,9 +401,7 @@
                 }
                 img{
                     width: 100%;
-                    height: 300px;
-                    
-
+                    height: 200px;
                 }
             }
             .tree-cont-divi-three{
@@ -499,18 +467,6 @@
             font-size: 3rem;
             color: white;
             position: relative;
-            &::before{
-                content: " ";
-                position: absolute;
-                width: 100px;
-                height: 4px;
-                background-image: conic-gradient(white, #f3698c );
-                bottom: 3rem;
-                left: 8rem;
-                @media (max-width:396px) {
-                    display: none;
-                }
-            }
         }
         .about-four-cont-divi{
             width: 100%;
@@ -688,6 +644,7 @@
                     transition: .3s;
                     &:hover{
                         border: 2px solid #f3698c;
+                        cursor: pointer;
                         .card-left{
                             background: #f3698c;
                         }
