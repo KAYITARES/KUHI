@@ -1,7 +1,8 @@
 import React from "react";
 // import CountUp from "react-countup/build/CountUp";
 import CountUp from "react-countup";
-import check from "../assets/img.png"
+import check from "../assets/KUHI_Consortium_Logo-removebg-preview.png";
+import img from "../assets/img.png";
 
 const About=()=>{
     return(
@@ -20,66 +21,66 @@ const About=()=>{
                     <h2>Alight Rwanda Statistics for the past four(4) editions</h2>
                         <div className="two-cont-left-stat">
                             <div className="stat-count-one">
-                    <div className="count-one" style={{ fontSize: "23px" }}>
+                    <div className="count-one" style={{ fontSize: "30px",fontWeight:"800",color:"rgb(19, 105, 105)" }}>
                      <CountUp 
-                     start={0}end={560000} duration={5}/>
-                     <p>Speakers</p>
-                     </div>
-                     <div className="count-two"  style={{ fontSize: "23px" }}>
-                     <CountUp 
-                     start={0}end={143000} duration={5}/>
+                     start={0}end={5600} duration={5}/>
                      <p>Sessions</p>
                      </div>
-                     <div className="count-three"  style={{ fontSize: "23px" }}>
+                     <div className="count-two"  style={{ fontSize: "30px",fontWeight:"800",color:"rgb(19, 105, 105)"}}>
                      <CountUp 
-                     start={0}end={45000} duration={5}/>
+                     start={0}end={14300} duration={5}/>
+                     <p>Speakers</p>
+                     </div>
+                     <div className="count-three"  style={{ fontSize: "30px",fontWeight:"800" ,color:"rgb(19, 105, 105)"}}>
+                     <CountUp 
+                     start={0}end={123432} duration={5}/>
                      <p>Delegates</p>
                      </div>
                      </div>
                      <div className="stat-count-one">
-                    <div className="count-one" style={{ fontSize: "23px" }}>
+                    <div className="count-one" style={{ fontSize: "30px",fontWeight:"800",color:"rgb(19, 105, 105)" }}>
                      <CountUp 
-                     start={0}end={203050} duration={5}/>
-                     <p>Speakers</p>
+                     start={0}end={203} duration={5}/>
+                     <p>Countries Represented</p>
                      </div>
-                     <div className="count-two"  style={{ fontSize: "23px" }}>
+                     <div className="count-two"  style={{ fontSize: "30px",fontWeight:"800" ,color:"rgb(19, 105, 105)"}}>
                      <CountUp 
-                     start={0}end={349592} duration={5}/>
-                     <p>Sessions</p>
+                     start={0}end={349} duration={5}/>
+                     <p>C-Suite Executives</p>
                      </div>
-                     <div className="count-three"  style={{ fontSize: "23px" }}>
+                     <div className="count-three"  style={{ fontSize: "30px",fontWeight:"800",color:"rgb(19, 105, 105)"}}>
                      <CountUp 
-                     start={0}end={192093} duration={5}/>
-                     <p>Delegates</p>
+                     start={0}end={1920} duration={5}/>
+                     <p>Head of States & Ministers</p>
                      </div>
                      </div>
                      <div className="stat-count-one">
-                    <div className="count-one" style={{ fontSize: "23px" }}>
+                    <div className="count-one" style={{ fontSize: "30px" ,fontWeight:"800",color:"rgb(19, 105, 105)"}}>
                      <CountUp 
                      start={0}end={1000} duration={5}/>
-                     <p>Speakers</p>
+                     <p>Sponsors & Exhibitors</p>
                      </div>
-                     <div className="count-two"  style={{ fontSize: "23px" }}>
+                     <div className="count-two"  style={{ fontSize: "30px" ,fontWeight:"800",color:"rgb(19, 105, 105)"}}>
                      <CountUp 
-                     start={0}end={10000} duration={5}/>
-                     <p>Sessions</p>
+                     start={0}end={1400} duration={5}/>
+                     <p>Media Representatives</p>
                      </div>
-                     <div className="count-three"  style={{ fontSize: "23px" }}>
+                     <div className="count-three"  style={{ fontSize:"30px",fontWeight:"800" ,color:"rgb(19, 105, 105)"}}>
                      <CountUp 
-                     start={0}end={16000} duration={5}/>
-                     <p>Delegates</p>
+                     start={0}end={1600} duration={5}/>
+                     <p>Mayors/Governors</p>
                      </div>
                      </div>
                      </div>
                      </div>
                      <div className="two-cont-center">
-                        <p>
+                    <p>
                       The Transform Africa Summit is Africa’s leading annual forum bringing together
                       global and regional leaders from government, business and international 
                       organizations to collaborate on new ways of shaping, accelerating and 
-                      sustaining Africa’s on-going digital revolution. 
+                      sustaining Africa’s on-going digital revolution. <br/> <br/>
                       Following five successful editions, the sixth Summit 
-                      will take place at the Victoria Falls in Zimbabwe.Running under
+                      will take place at the Victoria Falls in Zimbabwe.<br/> <br/>Running under
                       the theme “Connect, Innovate and Transform”, Transform Africa
                         </p>
                      </div>
@@ -180,7 +181,105 @@ const About=()=>{
                     </div>
                 </div>
             </div>
-            <div className="about-four"></div>
+            <div className="about-four">
+                <div className="about-four-cont">
+                    <h2>Why Attend?</h2>
+                    <div className="about-four-cont-divi">
+                        <div className="about-four-divi-one">
+                            <div className="four-divi-one">
+                                <p>
+                                Be part of Africa’s leading forum on digital transformation.
+                                </p>
+                                <i class='bx bx-chevron-left'></i>
+                            </div>
+                            <div className="four-divi-one">
+                                <p>
+                                Build relationships to ensure your business participates in Africa’s single digital market.
+                                </p>
+                                <i class='bx bx-chevron-left'></i>
+                            </div>
+                            <div className="four-divi-one">
+                                <p>
+                                Learn about emerging technologies in Africa and how your business can benefit.
+                                </p>
+                                <i class='bx bx-chevron-left'></i>
+                            </div>
+                            <div className="four-divi-one">
+                                <p>
+                                Build relationships with digital health experts for your health policies.
+                                </p>
+                                <i class='bx bx-chevron-left'></i>
+                            </div>
+                            <div className="four-divi-one">
+                                <p>
+                                Catch up on Artificial Intelligence in Africa & what it means to you & your company.
+                                </p>
+                                <i class='bx bx-chevron-left'></i>
+                            </div>
+                            <div className="four-divi-one">
+                                <p>
+                                Learn from leading experts with relevant presentations that will impact your business today.
+                                </p>
+                                <i class='bx bx-chevron-left'></i>
+                            </div>
+                        </div>
+                        <div className="about-four-divi-two">
+                            <img src={img} alt="" />
+                        </div>
+                        <div className="about-four-divi-three">
+                        <div className="four-divi-three">
+                        <i class='bx bx-chevron-right'></i>
+                                <p>
+                                Participate in engaging debate on crypto currency & Africa.
+                                </p>
+                                
+                            </div>
+                            <div className="four-divi-three">
+                            <i class='bx bx-chevron-right'></i>
+                                <p>
+                                Discover what’s new and what’s working in FinTech in Africa.
+                                </p>
+                               
+                            </div>
+                            <div className="four-divi-three">
+                            <i class='bx bx-chevron-right'></i>
+                                <p>
+                                Support the Women and Girls in STEM through participation & contribution toward the Smart Girls initiative.
+                                </p>
+                                
+                            </div>
+                            <div className="four-divi-three">
+                            <i class='bx bx-chevron-right'></i>
+                                <p>
+                                Build relationships with digital health experts for your health policies.
+                                </p>
+                                
+                            </div>
+                            <div className="four-divi-three">
+                            <i class='bx bx-chevron-right'></i>
+                                <p>
+                                Broaden your reach and deepen your impact through collaborations in Africa, shaping the digital landscape.
+                                </p>
+                                
+                            </div>
+                            <div className="four-divi-three">
+                            <i class='bx bx-chevron-right'></i>
+                                <p>
+                                Get insight into country specific SMART AFRICA flagship projects in the Member states and how your company can be a key player.
+                                </p>
+                                
+                            </div>
+                            <div className="four-divi-three">
+                            <i class='bx bx-chevron-right'></i>
+                                <p>
+                                Interact and network with key decision makers and deal makers.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         </>
     )
