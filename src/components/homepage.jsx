@@ -1,63 +1,69 @@
-import React from "react";
-import home from "../assets/KUHI_Consortium_Logo-removebg-preview.png";
-import kuhi from "../assets/alight.jpg";
-import gsma from "../assets/GSMA.jpg";
+import React, { useState } from "react";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
+import alight from '../assets/logo.jpeg'
 import Button from "@mui/material/Button";
-import { Carousel } from "antd";
-// import Lottie from 'lottie-react';
-// import animation from '../assets/animations.json'
-// import world from '../assets/world.json'
+import UNCDF from "../assets/UNCDF.png";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-// import worls from '../assets/worlds.json'
-// import alight from '../assets/alight.json'
-
-const contentStyle = {
-  margin: 0,
-  height: "auto",
-  color: "#000",
-  lineHeight: "19px",
-  background: "#FFFF",
-  padding: "50px 10px 50px",
-};
 
 function HomePage() {
-  const onChange = (currentSlide) => {
-    console.log(currentSlide);
-  };
   const backgroundImage = {
     backgroundImage: `linear-gradient(to bottom, rgba(253, 253, 253, 0.52), rgba(1, 1, 1, 0.73)), url("https://images.pexels.com/photos/1192662/pexels-photo-1192662.jpeg?")`,
-    // backgroundColor:'red',
     backgroundPosition: "50% 35%",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     height: "59vh",
     backgroundColor: "black",
   };
+
+  const [currentContent, setCurrentContent] = useState(1);
+
+  const toggleNextContent = () => {
+    setCurrentContent((prevContent) => {
+      if (prevContent === 3) {
+        return 1;
+      } else {
+        return prevContent + 1;
+      }
+    });
+  };
+
+  const togglePreviousContent = () => {
+    setCurrentContent((prevContent) => {
+      if (prevContent === 1) {
+        return 3;
+      } else {
+        return prevContent - 1;
+      }
+    });
+  };
+
   return (
     <>
       <div className="home-container">
         <div className="home-page" style={backgroundImage}>
           <div className="home">
-           
             <div className="dates">
-            <h1 style={{margin:"0 0 10px 0"}}>Digital Financial Inclusion Community of Practice Launch</h1>
+              <h1 className="head">
+                Digital Financial Inclusion Community of Practice Launch
+              </h1>
               <div className="date">
-          
                 <div className="vis">
-                
-                  <h1 className="falls">March 14<sup>th</sup>2024</h1>
+                  <div className="april">
+                    <div className="month">
+                      <div className="dat">14-24</div>
+                    </div>
+                    <div className="day">
+                      <div className="mon">APRIL</div>
+                    </div>
+                  </div>
                   <CalendarMonthOutlinedIcon className="add" />
                 </div>
               </div>
               <hr />
-
               <div className="victory">
                 <div className="vis">
-                  <h1 className="falls">
-                  Kigali Convention Center-Kigali
-                  </h1>
+                  <h1 className="falls">Kigali Convention Center-Kigali</h1>
                   <AddLocationAltIcon className="add" />
                 </div>
               </div>
@@ -68,270 +74,246 @@ function HomePage() {
           </div>
         </div>
         <div className="features">
-          <Carousel afterChange={onChange} autoplay>
-            <div>
-              <div style={contentStyle} className="content">
-                <h1 className="heads">BACKGROUND</h1>
-                <div className="teso">
-                  <div className="delay">
-                    <img src={kuhi} alt="home" />
-                    <div className="session">
-                      <p>
-                        {" "}
-                        The Kubaka Ubushobozi Hifashishijwe Ikoranabuhanga
-                        (KUHI) Consortium was brought together in 2020 by GSMA
-                        Mobile for Humanitarian Innovation (M4H) and comprises
-                        of World Vision, ALIGHT, Viamo, the United Nations
-                        Capital Development Fund (UNCDF) and Inkomoko (hereafter
-                        individually referred to as “party” or collectively as
-                        “parties.”) Please refer to Annex I at the end of this
-                        document for full descriptions of each member. The
-                        consortium was formed to leverage the complementary
-                        expertise of each agency to facilitate an environment
-                        for refugees and host community in Rwanda which is
-                        digitally and economically inclusive. The consortium
-                        engages a network of government, private sector and
-                        civil society stakeholders to utilize digital technology
-                        and facilitate tangible progress towards socio-economic
-                        inclusion for refugees and host communities in Rwanda.
-                        The consortium is supported by the expertise of a
-                        Strategic Advisory Group (SAG), which comprises of GSMA
-                        and the United Nations High Commission for Refugees
-                        (UNHCR), and other affiliate organizations in the
-                        digital financial spectrum.
-                      </p>
+          {currentContent === 1 && (
+            <div className="contents">
+              <div className="contents-logo">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1565213074583420933/ISBmxPrW_400x400.jpg"
+                  alt="home"
+                />
+              </div>
+              <div className="contents-container">
+                <h1>Inkomoko</h1>
+                <p>
+                  works with micro and small entrepreneurs across Africa,
+                  including refugees. By offering business advisory, access to
+                  finance, and market linkages, we support entrepreneurs to
+                  create thriving communities. Inkomoko started in Rwanda in
+                  2012 and now has offices in Kenya, Ethiopia, and South Sudan
+                  working with more than 10,000 entrepreneurs a year in Rwanda.
+                  Our vision is an Africa with thriving communities where young
+                  people and refugees are engaged, communities have access to
+                  relevant innovations for self-determination, and where African
+                  solutions are unleashed to solve African problems. We have
+                  provided business advisory and access to finance for thousands
+                  of entrepreneurs across East Africa. As the largest investor
+                  in refugee businesses, we have disbursed more than $13M in
+                  capital. This affordable finance for Inkomoko entrepreneurs
+                  helps them grow their businesses, create jobs, and improve
+                  their livelihoods. As we look forward, Inkomoko is developing
+                  new ways to engage communities to thrive. Creating meaningful
+                  market linkages, expanding to secondary cities, and advocating
+                  for economic inclusion, Inkomoko has added these
+                  community-based approaches to our enterprise development work.
+                  By 2030, Inkomoko will be in 8 countries, serving more than
+                  half a million small businesses, creating a positive impact
+                  for more than 7 million people across the Continent.
+                </p>
+                <h1 className="session-title">SESSION</h1>
+                <div className="session">
+                  <div className="smart-container">
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>digital skills</p>
+                    </div>
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>Broadband</p>
+                    </div>
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>satellites</p>
+                    </div>
+                  </div>
+                  <div className="smart-container">
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>digital skills</p>
+                    </div>
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>Broadband</p>
+                    </div>
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>satellites</p>
                     </div>
                   </div>
                 </div>
-                <div className="check">
-                  <h1>SESSION</h1>
-                  <div className="session">
-                    <div>
-                      <div className="smart-container">
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>digital skills and workspace</p>
-                        </div>
-
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>Broadband</p>
-                        </div>
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>setelites</p>
-                        </div>
-                      </div>
-                    </div>
-                    <hr />
-                    <div>
-                      <div className="smart-container">
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>digital skills and workspace</p>
-                        </div>
-
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>Broadband</p>
-                        </div>
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>setelites</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="contained">
-                  <Button
-                    variant="contained"
-                    disableElevation
-                    className="btn-home"
-                  >
-                    EXPLORE WVR
-                  </Button>
-                </div>
+                <Button className="btn-nav">REGISTER NOW</Button>
+                <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          margin: "20px",
+        }}
+      >
+        <Button onClick={togglePreviousContent} className="next">Previous</Button>
+        <Button onClick={toggleNextContent} className="next">Next</Button>
+      </div>
               </div>
             </div>
-            <div>
-              <div style={contentStyle} className="content">
-                <h1 className="heads">ALIGHT Rwanda</h1>
-                <div className="teso">
-                  <div className="delay">
-                    <img src={gsma} alt="home" />
-                    <div className="session">
-                      <p>
-                        {" "}
-                        ALIGHT Rwanda is the one and only agency that works in
-                        all refugee camps in Rwanda, serving mostly Congolese
-                        and Burundian refugees. Alight exists to walk alongside
-                        those who – by sheer circumstance – find themselves on
-                        the long and arduous journey of displacement. Deeply
-                        co-creating with communities and integrating
-                        human-centered design into our work for almost 3 decades
-                        in Rwanda, Alight understands the experiences of the
-                        displaced persons and seeks to deliver services worthy
-                        of their humanity. While Alight Rwanda works to ensure
-                        that refugees’ basic needs are met, we also recognize
-                        that in order to help displaced people fully regain a
-                        life of dignity and fulfillment, we must think and act
-                        beyond the status quo. This includes seeking partnership
-                        with the private sector. Our partnership with MeshPower
-                        has enabled Alight to pilot technologically driven
-                        humanitarian assistance such as the provision of solar
-                        streetlights, charging kiosks and energy saving stoves.
-                        Our partnership with VIAMO has enabled us to reach
-                        vulnerable displaced persons such as pregnant and
-                        lactating mothers with using Interactive Voice Response
-                        (IVR) systems.  {/*We also actively collaborate with leading
-                        agencies like global telecommunications company MTN,
-                        training agents who work with Rwanda’s refugee
-                        communities on a daily basis. The Rwandan */}
-                      </p>
+          )}
+
+          {currentContent === 2 && (
+            <div className="contents">
+              <div className="contents-logo">
+                <img src={UNCDF} alt="home" />
+              </div>
+              <div className="contents-container">
+                <h1>UNCDF </h1>
+                <p>
+                  UNCDF has been present in Rwanda since 1981, promoting
+                  community empowerment through infrastructure development and
+                  service delivery. Today, UNCDF offers “last mile” finance
+                  models that unlock public and private resources, especially at
+                  the domestic level, to reduce poverty and support local
+                  economic development. Through UNCDF's Inclusive Digital
+                  Economies practice, UNCDF partnered with Comic Relief and
+                  Jersey Overseas Aid to launch the ‘Rwanda: Expanding Financial
+                  Access & Digital and Financial Literacy’ (REFAD) programme in
+                  2019 to expand access to finance and improve digital and
+                  financial capability for vulnerable populations. The REFAD
+                  Programme has made significant strides in catalyzing Rwanda's
+                  digital finance ecosystem to reach digitally and financially
+                  underserved target populations such as refugees, youth, and
+                  women, as indicated in a case study publication released in
+                  2022. Through a multi-stakeholder approach, UNCDF will
+                  facilitate the provision of technical assistance and capacity
+                  building to foster innovation and develop solutions to shape
+                  the future of the fintech landscape in Rwanda.
+                </p>
+                <h1 className="session-title">SESSION</h1>
+                <div className="session">
+                  <div className="smart-container">
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>digital skills</p>
+                    </div>
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>Broadband</p>
+                    </div>
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>satellites</p>
+                    </div>
+                  </div>
+                  <div className="smart-container">
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>digital skills</p>
+                    </div>
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>Broadband</p>
+                    </div>
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>satellites</p>
                     </div>
                   </div>
                 </div>
-                <div className="check">
-                  <h1>SESSION</h1>
-                  <div className="session">
-                    <div>
-                      <div className="smart-container">
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>digital skills and workspace</p>
-                        </div>
-
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>Broadband</p>
-                        </div>
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>setelites</p>
-                        </div>
-                      </div>
-                    </div>
-                    <hr />
-                    <div>
-                      <div className="smart-container">
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>smart devices</p>
-                        </div>
-
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>Broadband</p>
-                        </div>
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>setelites</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="contained">
-                  <Button
-                    variant="contained"
-                    disableElevation
-                    className="btn-home"
-                  >
-                    EXPLORE ALIGHT
-                  </Button>
-                </div>
+                <Button className="btn-nav">REGISTER NOW</Button>
+                <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          margin: "20px",
+        }}
+      >
+        <Button onClick={togglePreviousContent} className="next">Previous</Button>
+        <Button onClick={toggleNextContent} className="next">Next</Button>
+      </div>
               </div>
             </div>
-            <div>
-              <div style={contentStyle} className="content">
-                <h1 className="heads">Modalities of Cooperation</h1>
-                <div className="teso">
-                  <div className="delay">
-                    <img src={home} alt="home" />
-                    <div className="session">
-                      <p>
-                        {" "}
-                        Members agree to use their individual and joint
-                        experiences on financial inclusion, digital development,
-                        and work with vulnerable communities such as those
-                        targeted herein to position and promote the experience
-                        of the consortium. Primarily, members should promote and
-                        advocate for joint initiatives and resource mobilization
-                        where appropriate. However, where the opportunity
-                        presented does not accommodate a consortium model, the
-                        consortium member can notify other members of such.
-                        Whenever possible, members may discuss possible areas of
-                        collaboration even in a competitive bid that still
-                        promotes consortium activities. Members agree that in
-                        order to present a competitive bid, there will be
-                        instances where individual agencies or part of the
-                        consortium will be represented in a bidding process. In
-                        such instances, individual agencies or partners who are
-                        consortium members will inform the entire consortium. If
-                        the member or members would like to cite the joint
-                        experience of KUHI consortium in the bidding process,
-                        consortium members must consent in writing.
-                      </p>
-                      <hr />
+          )}
+
+          {currentContent === 3 && (
+            <div className="contents">
+              <div className="contents-logo">
+                <img src={alight} alt="home" />
+              </div>
+              <div className="contents-container">
+                <h1>alight </h1>
+                <p>
+                  is the one and only agency that works in all refugee camps in
+                  Rwanda, serving mostly Congolese and Burundian refugees.
+                  Alight exists to walk alongside those who – by sheer
+                  circumstance – find themselves on the long and arduous journey
+                  of displacement. Deeply co-creating with communities and
+                  integrating human-centered design into our work for almost 3
+                  decades in Rwanda, Alight understands the experiences of the
+                  displaced persons and seeks to deliver services worthy of
+                  their humanity. While Alight Rwanda works to ensure that
+                  refugees’ basic needs are met, we also recognize that in order
+                  to help displaced people fully regain a life of dignity and
+                  fulfillment, we must think and act beyond the status quo. This
+                  includes seeking partnership with the private sector. Our
+                  partnership with MeshPower has enabled Alight to pilot
+                  technologically driven humanitarian assistance such as the
+                  provision of solar streetlights, charging kiosks and energy
+                  saving stoves. Our partnership with VIAMO has enabled us to
+                  reach vulnerable displaced persons such as pregnant and
+                  lactating mothers with using Interactive Voice Response (IVR)
+                  systems. We also actively collaborate with leading agencies
+                  like global telecommunications company MTN, training agents
+                  who work with Rwanda’s refugee communities on a daily basis.
+                  The Rwandan people and government, with their dedication to
+                  economic growth, stability, and building world class systems
+                  and solutions, provide an ideal environment for innovation. In
+                  Rwanda, we’ve collected more than 600,000 ratings of our
+                  services and over 200,000 ideas for how to do better.
+                </p>
+                <h1 className="session-title">SESSION</h1>
+                <div className="session">
+                  <div className="smart-container">
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>digital skills</p>
+                    </div>
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>Broadband</p>
+                    </div>
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>satellites</p>
+                    </div>
+                  </div>
+                  <div className="smart-container">
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>digital skills</p>
+                    </div>
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>Broadband</p>
+                    </div>
+                    <div className="cont">
+                      <ArrowForwardIosIcon className="icon" />
+                      <p>satellites</p>
                     </div>
                   </div>
                 </div>
-                <div className="check">
-                  <h1>SESSION</h1>
-                  <div className="session">
-                    <div>
-                      <div className="smart-container">
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>digital skills and workspace</p>
-                        </div>
+                <Button className="btn-nav">REGISTER NOW</Button>
 
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>Broadband</p>
-                        </div>
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>setelites</p>
-                        </div>
-                      </div>
-                    </div>
-                    <hr />
-                    <div>
-                      <div className="smart-container">
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>smart devices</p>
-                        </div>
-
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>Broadband</p>
-                        </div>
-                        <div className="cont">
-                          <ArrowForwardIosIcon className="icon" />
-                          <p>setelites</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="contained">
-                  <Button
-                    variant="contained"
-                    disableElevation
-                    className="btn-home"
-                  >
-                    EXPLORE CONNECT
-                  </Button>
-                </div>
+                <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          margin: "20px",
+        }}
+      >
+        <Button onClick={togglePreviousContent} className="next">Previous</Button>
+        <Button onClick={toggleNextContent} className="next">Next</Button>
+      </div>
               </div>
             </div>
-          </Carousel>
+          )}
         </div>
       </div>
+      
     </>
   );
 }
