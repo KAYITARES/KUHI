@@ -280,6 +280,63 @@ const About=()=>{
                     </div>
                 </div>
             </div>
+            <div className="aboout-five">
+                <div className="about-five-cont">
+                <h2>Book a Stand</h2>
+                    <div className="about-five-cont-divi">
+                    <div className="five-cont-divi-p">
+                        <p>
+                        Showcase your brand at the summit to a global audience 
+                        of decision makers. Book an exhibition space:</p>
+                    </div>
+                    <div className="five-cont-divi-card">
+                        <div className="five-cont-divi-card-one"> 
+                        <div className="card-left">
+                        <p>100sqm Pavilion</p>
+                        </div>
+                        <div className="card-right">
+                        <p>$100,000</p>
+                        </div>
+                        </div>
+                        <div className="five-cont-divi-card-one"> 
+                        <div className="card-left">
+                        <p>50sqm Executive exhibition</p>
+                        </div>
+                        <div className="card-right">
+                        <p>$50,000</p>
+                        </div>
+                        </div>
+                        <div className="five-cont-divi-card-one"> 
+                        <div className="card-left">
+                        <p>18sqm </p>
+                        </div>
+                        <div className="card-right">
+                        <p>$20,000</p>
+                        </div>
+                        </div>
+                        <div className="five-cont-divi-card-one"> 
+                        <div className="card-left">
+                        <p>9sqm </p>
+                        </div>
+                        <div className="card-right">
+                        <p>$10,000</p>
+                        </div>
+                        </div>
+                        <div className="five-cont-divi-card-one"> 
+                        <div className="card-left">
+                        <p>2sqm Start-up Lane </p>
+                        </div>
+                        <div className="card-right">
+                        <p>$3,000</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div className="five-cont-divi-pp">
+                        <p>*Please contact our team for bespoke spaces</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
         </>
     )
