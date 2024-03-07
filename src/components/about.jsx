@@ -78,9 +78,9 @@ const About=()=>{
                       The Transform Africa Summit is Africa’s leading annual forum bringing together
                       global and regional leaders from government, business and international 
                       organizations to collaborate on new ways of shaping, accelerating and 
-                      sustaining Africa’s on-going digital revolution.
+                      sustaining Africa’s on-going digital revolution. <br/> <br/>
                       Following five successful editions, the sixth Summit 
-                      will take place at the Victoria Falls in Zimbabwe.Running under
+                      will take place at the Victoria Falls in Zimbabwe.<br/> <br/>Running under
                       the theme “Connect, Innovate and Transform”, Transform Africa
                         </p>
                      </div>
