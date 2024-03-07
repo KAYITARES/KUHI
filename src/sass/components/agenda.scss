@@ -1,6 +1,10 @@
 .agenda-page{
     background-color: #fdfbfb;
     padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     h4{
         text-align: center;
@@ -14,6 +18,7 @@
     .agend-container{
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        width: 90%;
 
         .agenda-nav{
             display: flex;
@@ -46,7 +51,7 @@
                         font-weight: 100;
                     }
                 }
-                @media(max-width:847px){
+                @media(max-width:852px){
                     p{
                         font-size: 1rem;
                     }
@@ -62,7 +67,7 @@
                     padding: 0.5rem 1rem;
                 }
             }
-            #active{
+            .active{
                 background-color: #04aaed;
             }
         }
@@ -75,6 +80,14 @@
             .agenda-nav{
                 display: grid;
                 grid-template-columns: repeat(3,2fr);
+                gap: 1rem;
+            }
+        }
+        @media(max-width:455px){
+            .agenda-nav{
+                display: grid;
+                grid-template-columns: repeat(1,2fr);
+                gap: 1.5rem;
             }
         }
 
@@ -92,7 +105,7 @@
                 .explanation{
                     padding: 1.5rem;
                     margin-left: 3rem;
-                    display: none;
+                    font-size: 1.5rem;
                 }
 
                 .card{
@@ -111,23 +124,29 @@
                         h2{
                           font-size: 1.7rem;
                         }
+                        @media(max-width:852px){
+                            h2{
+                                font-size: 1rem;
+                              }
+                        }
                         p{
                             display: flex;
                             flex-direction: column;
     
                             span{
-                                font-size: 2rem;
+                                font-size: 1.4rem;
                                  font-family: 'Courier New', Courier, monospace;
                                 font-weight: 700;
                             }
                             @media(max-width:847px){
                                 span{
                                     font-size: 1rem;
+                                    width: 100%;
                                 }
                             }
     
                             button{
-                                width: 70%;
+                                width: 300px;
                                 border-radius: 1rem;
                                 border: none;
                                 box-shadow: none;
@@ -137,11 +156,17 @@
                                 background-color: #f27c71;
                                 color: #fff;
                                 font-weight: 500;
+                                display: flex;
+                                justify-content: center;
                             }
-                            @media(max-width:847px){
-                                width: 50%;
+                            @media(max-width:852px){
+                                button{
+                                    width: 100px;
+                                }
+                                
                             }
                         }
+                       
                    }
     
                    .secondiv{
@@ -159,6 +184,13 @@
                    }
     
     
+                }
+                @media(max-width:455px){
+                    .card{
+                   
+                        display: flex;
+                        flex-direction: column;
+                    }     
                 }
             }
         }
