@@ -354,15 +354,6 @@
                 font-size: 3rem;
                 color: white;
                 position: relative;
-                &::before{
-                    content: " ";
-                    position: absolute;
-                    width: 100px;
-                    height: 4px;
-                    background-image: linear-gradient(to right, red,blue);
-                    bottom: 3rem;
-                    left: 10rem;
-                }
             }
             .tree-cont-divi{
                 width: 100%;

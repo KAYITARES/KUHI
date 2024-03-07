@@ -3,7 +3,6 @@ import React from "react";
 import CountUp from "react-countup";
 import check from "../assets/KUHI_Consortium_Logo-removebg-preview.png";
 import img from "../assets/img.png";
-import check from "../assets/img.png"
 
 const About=()=>{
     return(
