@@ -1,7 +1,7 @@
 import React from "react";
 import {Link } from 'react-router-dom';
 import logos from '../assets/KUHI_Consortium_Logo-removebg-preview.png';
-// // import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from "react";
 import Button from "@mui/material/Button";
@@ -24,7 +24,6 @@ function NavBar(){
                 <li><Link className="link">The Summit<ArrowDropDownIcon className="ic"/>
                 <div className="drop-down">
                 <li><Link className="linka" to="./About">ABOUT US</Link></li>
-                <li>
                 <li><Link className="linka" to="./sponsor">OUR SPONSOR</Link></li>
 
 
