@@ -21,6 +21,17 @@ function NavBar(){
             </div>
             <ul className={isMobile?'openNav':'links'}
                     onClick={()=>setIsMobile(false)}>
+                <li><Link className="link">The Summit<ArrowDropDownIcon className="ic"/>
+                <div className="drop-down">
+                <li><Link className="linka" to="./About">ABOUT US</Link></li>
+                <li>
+                <li><Link className="linka" to="./sponsor">OUR SPONSOR</Link></li>
+
+
+                <li><Link className="linka" to="./speaker">OUR SPEAKERS</Link></li>
+                <li><Link className="linka">SUMMIT AGENDA</Link></li>
+                </div>
+                </Link></li>
                 <li><Link className="link">The Summit</Link></li>
                 <li><Link className="link" to="./speaker">OUR SPEAKERS</Link></li>
                 <li><Link to="/agenda" className="link">AGENDA</Link></li>
